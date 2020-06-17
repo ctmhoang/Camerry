@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  color: #ececec;
+  background-color: #222831;
+  font-family: Fira Sans Condensed;
+}
+
+/* HEADER */
+#header-nav {
+  border-radius: 0;
+  border: 2px solid #ececec;
+  background-color: transparent;
+  margin: 50px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand {
+  font-family: Great Vibes;
+  font-size: 3vw;
+  text-shadow: 1px 1px 1px #c1a57b;
+}
+
+#header-nav.active {
+  margin-top: 0;
+  background: #222831;
+  border: 2px solid transparent;
+}
+
+ul.nav-section > li {
+  text-align: center;
+  font-size: 1.3vw;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #c1a57b !important;
+}
+
+[class*="fa-"]:hover {
+  color: #c1a57b !important;
+}
+[class*="fa-"] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
