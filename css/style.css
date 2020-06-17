@@ -58,4 +58,11 @@ ul.nav-section > li {
 }
 [class*="fa-"] {
   color: rgba(255, 255, 255, 0.5) !important;
+  size: 1vw;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    padding-top: 10px;
+  }
 }
