@@ -9,11 +9,18 @@ html {
   box-sizing: inherit;
 }
 
+::selection,
+::-moz-selection {
+  background-color: #30475e;
+  color: #c1a57b;
+}
+
 body {
   font-size: 16px;
   color: #ececec;
   background-color: #222831;
   font-family: Fira Sans Condensed;
+  height: 100%;
 }
 
 /* HEADER */
@@ -22,13 +29,13 @@ body {
   border: 2px solid #ececec;
   background-color: transparent;
   margin: 50px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand {
   font-family: Great Vibes;
-  font-size: 3vw;
+  font-size: 3.1vw;
   text-shadow: 1px 1px 1px #c1a57b;
 }
 
@@ -40,7 +47,7 @@ body {
 
 ul.nav-section > li {
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 1.7vw;
 }
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link,
@@ -50,12 +57,15 @@ ul.nav-section > li {
   color: #c1a57b !important;
 }
 
+.navbar-dark .navbar-toggler {
+  border: none;
+}
 [class*="fa-"]:hover {
   color: #c1a57b !important;
 }
 [class*="fa-"] {
   color: rgba(255, 255, 255, 0.5) !important;
-  size: 1vw;
+  size: 1.1vw;
 }
 
 @media (max-width: 768px) {
@@ -63,3 +73,39 @@ ul.nav-section > li {
     padding-top: 10px;
   }
 }
+/* END HEADER */
+
+/* JUMBOTRON VIDEO */
+.jumbotron.jumbotron-fluid {
+  position: relative;
+  overflow: hidden;
+  background-color: #222831;
+  padding: 0;
+}
+.jumbotron.jumbotron-fluid video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity: 0.5;
+}
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+  padding-top: 40vh;
+  padding-bottom: 30vh;
+}
+/* END JUMPOTRON */
+
+/* FOOTER */
+footer {
+  background-color: peru;
+}
+
+/* Make div in 2 nd has padding */
+/* footer > div:nth-child(
+
+) */
