@@ -1,7 +1,7 @@
 "use strict";
 
-$(document).ready(function () {
-  "use strict";
+$(function () {
+  //Nav-Bar
   (function () {
     const docElem = document.documentElement,
       changeHeaderOn = 70;
@@ -33,21 +33,47 @@ $(document).ready(function () {
       return window.pageYOffset || docElem.scrollTop;
     }
 
+    //END NAV_BAR
+
+    //CALL_INIT__NAV_BAR
     __init__();
+
+    function videoResp() {
+      var mainVideo = $("#video-header");
+
+      const medQualVersionSrc = "assets/intro-med.mp4";
+      const highQualVersionSrc = "assets/intro.mp4";
+      if ($(window).width() < 500) {
+        mainVideo.append(
+          "<source type='video/mp4' src='' data-src='" +
+            medQualVersionSrc +
+            "' />"
+        );
+      } else {
+        mainVideo.append(
+          "<source type='video/mp4' src='' data-src='" +
+            highQualVersionSrc +
+            "' />"
+        );
+      }
+    }
+
+    videoResp();
+    alert("done");
   })();
 });
 
 //BLUR
 $(window).on("scroll", function () {
-  var pixs = $(document).scrollTop();
-  pixs = pixs / 200;
+  let pixs = $(document).scrollTop();
+  pixs = pixs / 270;
   $(".unique").css({
     "-webkit-filter": "blur(" + pixs + "px)",
     filter: "blur(" + pixs + "px)",
   });
 });
 
-function deferVideo() {
+$(function deferVideo() {
   //defer html5 video loading
   $("video source").each(function () {
     var sourceFile = $(this).attr("data-src");
@@ -57,8 +83,7 @@ function deferVideo() {
     // uncomment if video is not autoplay
     //video.play();
   });
-}
-window.onload = deferVideo;
+});
 
 // Select all links with hashes
 $('a[href*="#"]')

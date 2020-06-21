@@ -68,11 +68,6 @@ ul.nav-section > li {
   size: 1.1vw;
 }
 
-@media (max-width: 768px) {
-  .icons {
-    padding-top: 10px;
-  }
-}
 /* END HEADER */
 
 /* JUMBOTRON VIDEO */
@@ -81,6 +76,7 @@ ul.nav-section > li {
   overflow: hidden;
   background-color: #222831;
   padding: 0;
+  height: 100vh;
 }
 .jumbotron.jumbotron-fluid video {
   position: absolute;
@@ -91,13 +87,14 @@ ul.nav-section > li {
   /*  object-fit is not supported on IE  */
   object-fit: cover;
   opacity: 0.5;
+  background-size: cover;
 }
 .jumbotron .container {
   z-index: 2;
   position: relative;
   padding-top: 40vh;
-  padding-bottom: 30vh;
 }
+
 /* END JUMPOTRON */
 
 /* FOOTER */
@@ -109,3 +106,22 @@ footer {
 /* footer > div:nth-child(
 
 ) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .icons {
+    padding-top: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
