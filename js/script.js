@@ -126,3 +126,33 @@ $('a[href*="#"]')
       }
     }
   });
+
+$(function toTop() {
+  let scrollPos = 0;
+  const element = $("#btnToTop");
+  $(window).scroll(function () {
+    let scrollCur = $(window).scrollTop();
+    if (scrollCur > scrollPos) {
+      // scroll down
+      if (scrollCur > 500) {
+        element.addClass("active");
+      } else {
+        element.removeClass("active");
+      }
+    } else {
+      // scroll up
+      element.removeClass("active");
+    }
+
+    scrollPos = scrollCur;
+  });
+
+  element.click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: "0px",
+      },
+      800
+    );
+  });
+});
