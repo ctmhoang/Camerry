@@ -15,6 +15,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,7 +26,7 @@
         class="navbar navbar-expand-sm navbar-dark fixed-top flex-sm-wrap"
       >
         <a
-          class="navbar-brand ml-auto col-sm-3 mw-25 order-1 order-sm-0 col-11 mx-auto"
+          class="navbar-brand ml-auto mw-25 order-1 order-sm-0 col-11 col-md-3 mx-auto"
           href="index.html"
           >Camerry 's Bakery</a
         >
@@ -69,11 +70,11 @@
         </div>
 
         <div
-          class="d-flex justify-content-between col-12 col-md-2 order-3 icons"
+          class="d-flex justify-content-between col-12 col-md-2 order-3 pt-3 pt-md-0"
         >
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
         </div>
       </nav>
     </header>
@@ -86,20 +87,27 @@
         muted
         loop
         poster="img/home-11-video-image-1100x500.jpg"
-      >
-        <!-- <source src="" data-src="assets/intro.mp4" type="video/mp4" /> -->
-      </video>
-      <div class="container text-white">
-        <h1 class="display-3">Very interesting title</h1>
-        <p class="lead">Blah text</p>
-        <hr class="my-2" />
-        <p>More info</p>
-        <p class="lead">
-          ahihi Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          enim quae cupiditate aliquam maxime tenetur, explicabo laborum, aut
-          officia fuga facere. Similique quas, nostrum fugiat unde laboriosam
-          quisquam odit deleniti?
-        </p>
+      ></video>
+      <div class="container text-white d-flex">
+        <div class="home-1 col-5 d-none d-md-block"></div>
+        <div class="col-12 col-md-7 pl-5 pt-5">
+          <h1 class="display-3 text-capitalize">
+            Delicieux
+          </h1>
+          <p class="lead">
+            We all love sweet, fluffy & cripsy things like you do
+          </p>
+          <hr class="my-4" />
+          <p>Tap the arrow below to learn more about us and our products.</p>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center arrow">
+        <a href=""
+          ><i
+            class="fas fa-arrow-down animate__animated animate__bounce animate__repeat-3 animate__slow"
+            aria-hidden="true"
+          ></i>
+        </a>
       </div>
     </div>
     <p>

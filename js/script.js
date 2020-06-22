@@ -59,7 +59,6 @@ $(function () {
     }
 
     videoResp();
-    alert("done");
   })();
 });
 
@@ -78,6 +77,7 @@ $(function deferVideo() {
   $("video source").each(function () {
     var sourceFile = $(this).attr("data-src");
     $(this).attr("src", sourceFile);
+    $(this).removeAttr("data-src");
     var video = this.parentElement;
     video.load();
     // uncomment if video is not autoplay
