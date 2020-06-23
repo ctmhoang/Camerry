@@ -22,8 +22,9 @@ body {
   font-family: Fira Sans Condensed;
   height: 100%;
   background-image: url(../img/background-200x300.jpg);
-  background-size: contain;
-  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-blend-mode: color-dodge;
+  background-attachment: fixed;
 }
 
 h1,
@@ -93,7 +94,8 @@ ul.nav-section > li {
 .jumbotron.jumbotron-fluid {
   position: relative;
   overflow: hidden;
-  background-color: #222831;
+  background-color: rgba(34, 40, 49, 0.3);
+  box-shadow: 0 10px 50px -6px rgba(255, 195, 139, 0.3);
   padding: 0;
   height: 100vh;
 }
@@ -168,6 +170,12 @@ ul.nav-section > li {
   animation: bounceInDown 1.3s ease-in-out;
   visibility: visible;
   opacity: 1;
+}
+/* END BACK TO TOP BTN */
+
+.center-child > * {
+  margin: 7px auto;
+  text-align: center;
 }
 
 /* FOOTER */
