@@ -308,19 +308,23 @@
           Live with passion
         </p>
         <div class="container row mx-auto">
-          <div class="col-12 col-md-4 text-center">
+          <div class="col-12 col-md-4 text-center card">
             <div class="container_thumbnail">
-              <img src="img/blog-1.jpg" alt="" class="img-thumbnail" />
+              <img
+                src="img/blog-1.jpg"
+                alt=""
+                class="img-thumbnail card-img-top"
+              />
               <a class="overlay_thumbnail" href=""></a>
             </div>
-            <div>
-              <a href="" class="blog-title">buttery toast</a>
-              <article>
+            <div class="card-body">
+              <a href="" class="card-title blog-title">buttery toast</a>
+              <article class="card-text">
                 Leverage agile frameworks to provide a robust synopsis for high
                 level overviews. Iterative approaches to corporate strategy
                 foster collaborative thinking to further…
               </article>
-              <a href="">Read more</a>
+              <div class="card-footer"><a href="">Read more</a></div>
             </div>
           </div>
           <div class="col-12 col-md-4 text-center">
@@ -362,25 +366,44 @@
       <i class="fas fa-arrow-alt-circle-up"></i>
     </div>
 
-    <footer
-      class="container-fluid d-flex justify-content-between"
-      id="contact-info"
-    >
-      <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A soluta fugit
-        ad, tempore aperiam sunt eos voluptate magni labore explicabo,
-        dignissimos adipisci eius recusandae animi sed autem cupiditate esse
-        maiores?
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi et
-        repudiandae, numquam officiis debitis quod pariatur harum praesentium,
-        culpa vel quos saepe reiciendis impedit iure nulla ea, quisquam ut in?
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi et
-        repudiandae, numquam officiis debitis quod pariatur harum praesentium,
-        culpa vel quos saepe reiciendis impedit iure nulla ea, quisquam ut in?
+    <footer class="panel-footer">
+      <div class="container" id="contact-info">
+        <div class="row">
+          <section id="address" class="col-md-6 col-lg-4 order-1">
+            <span>Address:</span><br />
+            7105 Reisterstown Road<br />
+            Baltimore, MD 21215
+            <p>
+              * Delivery area within 3-4 miles, with minimum order of $20 plus
+              $3 charge for all deliveries.
+            </p>
+            <hr class="d-block d-md-none" />
+          </section>
+
+          <section class="col-md-12 col-lg-4 order-0 order-lg-1" id="contact">
+            <img
+              src="img/footer.png"
+              class="img-fluid d-block mx-auto"
+              alt=""
+            />
+            <span>Contact with us</span>
+            <br />
+            <a href="tel:647-646-1234"
+              ><i class="fas fa-phone"></i> 647-646-1234
+            </a>
+          </section>
+
+          <section id="hours" class="col-md-6 col-lg-4 order-1">
+            <span>Hours:</span><br />
+            Sun-Thurs: 11:15am - 10:00pm<br />
+            Fri: 11:15am - 2:30pm<br />
+            Saturday Closed
+            <hr class="d-block d-md-none" />
+          </section>
+        </div>
+        <div class="text-center">
+          &copy; Copyright Camerry Bakery 2020
+        </div>
       </div>
     </footer>
 

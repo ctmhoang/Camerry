@@ -87,6 +87,9 @@ hr {
   border-top: 1px solid rgba(245, 185, 113, 0.5);
 }
 
+.card {
+  background: none;
+}
 /* HEADER */
 #header-nav {
   border-radius: 0;
@@ -131,7 +134,51 @@ ul.nav-section > li {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.fa-phone:hover,
+.fa-phone {
+  color: #c1a57b;
+}
+
 /* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: rgba(34, 40, 49, 0.7);
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours,
+#address,
+#contact {
+  line-height: 2;
+}
+#hours > span,
+#address > span,
+#contact > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #ffcb74;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+
+.panel-footer section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.panel-footer section:nth-child(3) {
+  margin-bottom: 0; /* margin already exists on the whole row */
+}
+.panel-footer section hr {
+  width: 50%;
+}
+/* END FOOTER */
 
 /* JUMBOTRON VIDEO */
 .jumbotron.jumbotron-fluid {
@@ -198,7 +245,7 @@ section#home-reviews {
   background: url(../img/testimonial-300x172.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 52vh;
+  height: 61vh;
 }
 section#home-reviews h3 {
   font-size: 1.75rem;
@@ -335,6 +382,17 @@ footer {
   section#home-reviews {
     background-image: url(../img/testimonial-768x440.jpg);
   }
+  /* FOOTER */
+  .panel-footer section {
+    margin-bottom: auto;
+  }
+  .panel-footer section:first-child {
+    margin-bottom: 17px;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: auto; /* margin already exists on the whole row */
+  }
+  /* END FOOTER */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -351,6 +409,17 @@ footer {
   section#home-reviews {
     background-image: url(../img/testimonial-1024x587.jpg);
   }
+  /* FOOTER */
+  #address {
+    text-align: left;
+  }
+  #contact {
+    text-align: center;
+  }
+  #hours {
+    text-align: right;
+  }
+  /* END FOOTER */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
