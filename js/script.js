@@ -156,3 +156,24 @@ $(function toTop() {
     );
   });
 });
+
+$(function parallax() {
+  $(".parallax").each(function () {
+    const element = $(this);
+    const windowHeight = $(window).height();
+
+    $(window).scroll(function () {
+      let current = $(window).scrollTop();
+      let top = element.offset().top;
+      let height = element.outerHeight();
+      //Do not scroll to the parallax bg
+      if (top + height < current || top > current + windowHeight) {
+        return;
+      }
+      element.css(
+        "backgroundPosition",
+        "center " + Math.round((top - current) * 0.2) + "px"
+      );
+    });
+  });
+});

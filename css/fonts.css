@@ -22,19 +22,6 @@
     U+FEFF, U+FFFD;
 }
 
-/* cyrillic-ext */
-@font-face {
-  font-family: "Fira Sans Condensed";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Fira Sans Condensed Regular"), local("FiraSansCondensed-Regular"),
-    url(https://fonts.gstatic.com/s/firasanscondensed/v4/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfvtrftV.woff2)
-      format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}
-
 /* vietnamese */
 @font-face {
   font-family: "Fira Sans Condensed";

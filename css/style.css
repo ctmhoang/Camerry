@@ -37,6 +37,35 @@ h6 {
   font-family: Rancho;
 }
 
+blockquote > footer {
+  background: none;
+}
+
+.opaque-9 {
+  opacity: 0.9;
+}
+.grayscale {
+  filter: grayscale(30%);
+}
+.signature {
+  background-image: url(../img/CEO_signature.png);
+  background-size: 167px 86px;
+  height: 86px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert();
+}
+.toque {
+  background-image: url(../img/toque.png);
+  background-size: 172px 124px;
+  height: 124px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.handwrite {
+  font-family: Great Vibes;
+  font-size: 2.3em;
+}
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -139,6 +168,48 @@ ul.nav-section > li {
 
 /* END JUMPOTRON */
 
+/* CAROUSEL */
+
+h1.testimonials-header {
+  font-size: 1.1em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 6px;
+}
+section#home-reviews {
+  margin: 50px 0px 70px;
+  padding: 100px 0;
+  color: #f9f9f9;
+  background: url(../img/testimonial-300x172.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 52vh;
+}
+section#home-reviews h3 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.fa-quote-left {
+  padding-right: 10px;
+}
+.fa-quote-right {
+  padding-left: 10px;
+}
+section#home-reviews p {
+  font-size: 13pt;
+}
+.stars > [class*="fa-star"]:hover,
+.stars > [class*="fa-star"] {
+  color: #c1a57b;
+}
+.carousel-item {
+  height: 30vh;
+}
+
+/* END CAROUSEL */
+
 /* TO TOP BTN */
 #btnToTop {
   position: fixed;
@@ -173,11 +244,6 @@ ul.nav-section > li {
 }
 /* END BACK TO TOP BTN */
 
-.center-child > * {
-  margin: 7px auto;
-  text-align: center;
-}
-
 /* FOOTER */
 footer {
   background-color: #222831;
@@ -203,6 +269,12 @@ footer {
   body {
     background-image: url(../img/background-768x1150.jpg);
   }
+  .signature {
+    background-position: right;
+  }
+  section#home-reviews {
+    background-image: url(../img/testimonial-768x440.jpg);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -216,8 +288,14 @@ footer {
   ul.nav-section > li {
     font-size: 1.7vw;
   }
+  section#home-reviews {
+    background-image: url(../img/testimonial-1024x587.jpg);
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  section#home-reviews {
+    background-image: url(../img/testimonial.jpg);
+  }
 }
