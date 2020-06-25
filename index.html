@@ -20,6 +20,20 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Search -->
+    <div class="search-container">
+      <div class="search_content">
+        <a class="search_close" href="#"><span></span></a>
+        <form action="do_action" method="post">
+          <h3>Enter your keyword</h3>
+          <div>
+            <input type="text" placeholder="Search something 😊" />
+            <button class="mx-auto">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <header class="clearfix">
       <nav
         id="header-nav"
@@ -50,18 +64,18 @@
             class="navbar-nav d-flex w-100 justify-content-between nav-section"
           >
             <li class="nav-item active flex-grow-1 flex-shrink-1">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="index.html"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item flex-grow-1 flex-shrink-1">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item flex-grow-1 flex-shrink-1">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item flex-grow-1 flex-shrink-1">
-              <a class="nav-link" href="#">Reservation</a>
+              <a class="nav-link" href="reservation.html">Reservation</a>
             </li>
             <li class="nav-item flex-grow-1 flex-shrink-1">
               <a class="nav-link" href="#contact-info">Contact</a>
@@ -72,9 +86,13 @@
         <div
           class="d-flex justify-content-between col-12 col-md-2 order-3 pt-3 pt-md-0"
         >
-          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          <a href="#"
+            ><i class="fa fa-search search-btn" aria-hidden="true"></i
+          ></a>
+          <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+          <a href="cart.html"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+          ></a>
         </div>
       </nav>
     </header>

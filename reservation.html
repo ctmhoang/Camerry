@@ -63,10 +63,8 @@
           <ul
             class="navbar-nav d-flex w-100 justify-content-between nav-section"
           >
-            <li class="nav-item active flex-grow-1 flex-shrink-1">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+            <li class="nav-item flex-grow-1 flex-shrink-1">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item flex-grow-1 flex-shrink-1">
               <a class="nav-link" href="about.html">About</a>
@@ -74,8 +72,10 @@
             <li class="nav-item flex-grow-1 flex-shrink-1">
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
-            <li class="nav-item flex-grow-1 flex-shrink-1">
-              <a class="nav-link" href="reservation.html">Reservation</a>
+            <li class="nav-item flex-grow-1 flex-shrink-1 active">
+              <a class="nav-link" href="reservation.html"
+                >Reservation <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item flex-grow-1 flex-shrink-1">
               <a class="nav-link" href="#contact-info">Contact</a>
@@ -97,7 +97,72 @@
       </nav>
     </header>
 
-    <div id="main-context"></div>
+    <div id="main-context">
+      <!-- reservation-section -->
+      <div class="background-container">
+        <img
+          src="img/blog-f-img-3-1000x550.jpg"
+          class="img-fluid w-100 opaque-9 parallax-img"
+          alt=""
+        />
+      </div>
+      <section class="reservation-section">
+        <div class="container">
+          <form id="reservation-form">
+            <h3>Opening Hour 8:00 AM - 10:00 PM, every day on week.</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  name="mail"
+                  id="mail"
+                  type="text"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="col-sm-6">
+                <input name="date" id="date" type="date" placeholder="Date" />
+              </div>
+              <div class="col-sm-6">
+                <input name="time" id="time" type="time" placeholder="Time" />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  name="guests"
+                  id="guests"
+                  type="text"
+                  placeholder="Guests"
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  name="phone-number"
+                  id="phone-number"
+                  type="text"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <input
+                type="submit"
+                id="submit_reservation"
+                value="Make Reservation"
+              />
+            </div>
+            <div id="msg" class="message alert"></div>
+          </form>
+        </div>
+      </section>
+      <!-- End reservation section -->
+    </div>
 
     <div id="btnToTop">
       <i class="fas fa-arrow-alt-circle-up"></i>

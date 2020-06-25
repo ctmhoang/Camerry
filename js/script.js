@@ -177,3 +177,38 @@ $(function parallax() {
     });
   });
 });
+
+$(function parallaxImg() {
+  $(".parallax-img").each(function () {
+    const element = $(this);
+    const windowHeight = $(window).height();
+
+    $(window).scroll(function () {
+      let current = $(window).scrollTop();
+      let top = element.offset().top;
+      let height = element.outerHeight();
+      //Do not scroll to the parallax bg
+      if (top + height < current || top > current + windowHeight) {
+        return;
+      }
+      element.css(
+        "object-position",
+        "center " + Math.round((top - current) * 0.2) + "px"
+      );
+    });
+  });
+});
+
+$(function search() {
+  const searchOpen = $(".search-btn"),
+    searchClose = $(".search_close"),
+    searchbox = $(".search-container");
+  searchOpen.on("click", function (e) {
+    e.preventDefault();
+    searchbox.addClass("active");
+  });
+  searchClose.on("click", function (e) {
+    e.preventDefault();
+    searchbox.removeClass("active");
+  });
+});
